@@ -169,11 +169,12 @@ footer .conteiner_two {
       -ms-flex-align: center;
           align-items: center;
 }
+footer #twitter,
 footer #facebook,
 footer #instagram,
 footer #telegram,
-footer #google,
-footer #github {
+footer #whatsapp,
+footer #viber {
   margin: 15px 7px;
   width: 40px;
   height: 40px;
@@ -221,16 +222,38 @@ footer #telegram:hover {
           box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
   background-image: url(../img/telegram.png);
 }
-footer #google {
+footer #twitter {
   -webkit-box-shadow: 0px 0px 10px rgb(255, 255, 255);
           box-shadow: 0px 0px 10px rgb(255, 255, 255);
   background-size: 100%;
-  background-image: url(../img/google-black.png);
+  background-image: url(../img/twitter-black.png);
 }
-footer #google:hover {
+footer #twitter:hover {
   -webkit-box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
           box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
-  background-image: url(../img/google.png);
+  background-image: url(../img/twitter.png);
+}
+footer #viber {
+  -webkit-box-shadow: 0px 0px 10px rgb(255, 255, 255);
+          box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  background-size: 100%;
+  background-image: url(../img/viber-black.png);
+}
+footer #viber:hover {
+  -webkit-box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+          box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+  background-image: url(../img/viber.png);
+}
+footer #whatsapp {
+  -webkit-box-shadow: 0px 0px 10px rgb(255, 255, 255);
+          box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  background-size: 100%;
+  background-image: url(../img/whatsapp-black.png);
+}
+footer #whatsapp:hover {
+  -webkit-box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+          box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+  background-image: url(../img/whatsapp.png);
 }
 
 @media screen and (min-width: 1024px) {

@@ -146,11 +146,12 @@ footer {
     align-items: center;
   }
 
+  #twitter,
   #facebook,
   #instagram,
   #telegram,
-  #google,
-  #github {
+  #whatsapp,
+  #viber {
     margin: 15px 7px;
     width: 40px;
     height: 40px;
@@ -198,15 +199,37 @@ footer {
     background-image: url(../img/telegram.png);
   }
 
-  #google {
+  #twitter {
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
     background-size: 100%;
-    background-image: url(../img/google-black.png);
+    background-image: url(../img/twitter-black.png);
   }
 
-  #google:hover {
+  #twitter:hover {
     box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
-    background-image: url(../img/google.png);
+    background-image: url(../img/twitter.png);
+  }
+
+  #viber {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    background-size: 100%;
+    background-image: url(../img/viber-black.png);
+  }
+
+  #viber:hover {
+    box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+    background-image: url(../img/viber.png);
+  }
+
+  #whatsapp {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    background-size: 100%;
+    background-image: url(../img/whatsapp-black.png);
+  }
+
+  #whatsapp:hover {
+    box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+    background-image: url(../img/whatsapp.png);
   }
 }
 
