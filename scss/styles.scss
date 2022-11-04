@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+// @import "icon-list";
+
+* {
+  padding: 0;
+}
+
+// ------------------------header------------------------
+.navbar {
+  .nav_menu_logo {
+    margin: 0 5px;
+    padding: 0;
+    display: flex;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin: 3px 5px;
+      padding: 0;
+    }
+    .logo {
+      padding: 0;
+
+      h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 1.8em;
+        letter-spacing: 0.1em;
+        font-family: "Tangerine", cursive;
+        color: #075c0b;
+      }
+    }
+
+    .languages {
+      padding: 0px;
+      display: flex;
+      justify-content: end;
+
+      .language-active {
+        padding: 3px;
+        margin: 0 3px;
+        width: 40px;
+        background-color: #075c0b;
+        color: silver;
+      }
+
+      .language {
+        padding: 3px;
+        margin: 0 3px;
+        width: 40px;
+        background-color: gray;
+        color: black;
+      }
+    }
+  }
+
+  .nav_menu_mobile {
+    margin: 0 5px;
+    padding: 0;
+    display: flex;
+
+    .row {
+      display: flex;
+      margin: 3px 5px;
+      padding: 0;
+    }
+  }
+
+  .button {
+    margin: 0 3px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    background-color: #075c0b;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: silver;
+  }
+
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.2em;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.2;
+    transform: translateX(-3em) skewX(-45deg);
+  }
+
+  .button:hover {
+    transition: 1.2s;
+    color: white;
+  }
+
+  .button:hover::before {
+    animation: blick 1.3s;
+  }
+
+  @keyframes blick {
+    from {
+      transform: translateX(-3em) skewX(-45deg);
+    }
+
+    to {
+      transform: translateX(30em) skewX(-45deg);
+    }
+  }
+
+  .nav_menu_computer {
+    margin: 0 5px;
+    padding: 0;
+    display: none;
+
+    .row {
+      display: flex;
+      margin: 3px 5px;
+      padding: 0;
+    }
+  }
+}
+
+section {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(41, 38, 38);
+  border: 1px solid silver;
+  margin: 10px 0;
+}
+
+// ------------------------footer------------------------
+footer {
+  height: auto;
+  background-color: rgb(41, 38, 38);
+
+  .conteiner_two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #facebook,
+  #instagram,
+  #telegram,
+  #google,
+  #github {
+    margin: 15px 7px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #075c0b;
+  }
+
+  .conteiner_two a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+  }
+
+  #facebook {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    background-size: 100%;
+    background-image: url(../img/facebook-black.png);
+  }
+
+  #facebook:hover {
+    box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+    background-image: url(../img/facebook.png);
+  }
+
+  #instagram {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    background-size: 100%;
+    background-image: url(../img/instagram-black.png);
+  }
+
+  #instagram:hover {
+    box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+    background-image: url(../img/instagram.png);
+  }
+
+  #telegram {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    background-size: 100%;
+    background-image: url(../img/telegram-black.png);
+  }
+
+  #telegram:hover {
+    box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+    background-image: url(../img/telegram.png);
+  }
+
+  #google {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    background-size: 100%;
+    background-image: url(../img/google-black.png);
+  }
+
+  #google:hover {
+    box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+    background-image: url(../img/google.png);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    .nav_menu_mobile {
+      display: none;
+    }
+    .nav_menu_computer {
+      display: flex;
+    }
+  }
+}
