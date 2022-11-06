@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 html,
@@ -147,7 +148,7 @@ body {
 }
 
 section {
-  height: 800px;
+  height: 400px;
   margin-bottom: 10px;
 }
 section h2 {
@@ -156,20 +157,23 @@ section h2 {
   text-align: center;
 }
 
-#about_us {
+#courses {
   margin-top: 150px;
+}
+
+#contacts {
   width: 100%;
   height: auto;
 }
-#about_us p {
+#contacts p {
   color: silver;
 }
-#about_us .row {
+#contacts .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-#about_us .col-sm-5 {
+#contacts .col-sm-5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,8 +184,98 @@ section h2 {
       -ms-flex-align: center;
           align-items: center;
 }
-#about_us .col-sm-5 img {
+#contacts .col-sm-5 img {
   width: 100%;
+}
+
+#faq .accordion-button {
+  color: #237927;
+  background-color: rgb(38, 41, 38);
+  border: 1px solid gray;
+}
+#faq .accordion-body {
+  background-color: rgb(52, 54, 52);
+  color: silver;
+  border: 1px solid gray;
+}
+
+#help .form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid gray;
+  width: 350px;
+}
+#help .form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#help label {
+  margin: 5px 0;
+  color: silver;
+}
+#help .btn {
+  margin: 15px auto 0 auto;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  background-color: #075c0b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+  color: silver;
+}
+#help .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.2em;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+  -webkit-transform: translateX(-3em) skewX(-45deg);
+          transform: translateX(-3em) skewX(-45deg);
+}
+#help .btn:hover {
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+  color: white;
+}
+#help .btn:hover::before {
+  -webkit-animation: blicked 1.3s;
+          animation: blicked 1.3s;
+}
+@-webkit-keyframes blicked {
+  from {
+    -webkit-transform: translateX(-3em) skewX(-45deg);
+            transform: translateX(-3em) skewX(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(30em) skewX(-45deg);
+            transform: translateX(30em) skewX(-45deg);
+  }
+}
+@keyframes blicked {
+  from {
+    -webkit-transform: translateX(-3em) skewX(-45deg);
+            transform: translateX(-3em) skewX(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(30em) skewX(-45deg);
+            transform: translateX(30em) skewX(-45deg);
+  }
 }
 
 #back-top {
@@ -218,6 +312,16 @@ section h2 {
 footer {
   height: auto;
   background-color: rgb(41, 38, 38);
+}
+footer p {
+  margin: 5px 0 5px 15px;
+}
+footer p a {
+  text-decoration: none;
+  color: gray;
+}
+footer p a:hover {
+  color: #237927;
 }
 footer .conteiner_two {
   display: -webkit-box;
@@ -332,7 +436,7 @@ footer #whatsapp:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  #about_us {
+  #courses {
     margin-top: 100px;
   }
 }

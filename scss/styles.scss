@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 html,
@@ -132,7 +133,7 @@ body {
 
 // ------------------------section all------------------------
 section {
-  height: 800px;
+  height: 400px;
   margin-bottom: 10px;
 
   h2 {
@@ -141,9 +142,13 @@ section {
     text-align: center;
   }
 }
-
-#about_us {
+// ------------------------courses------------------------
+#courses {
   margin-top: 150px;
+}
+
+// ------------------------contakts------------------------
+#contacts {
   width: 100%;
   height: auto;
 
@@ -162,6 +167,86 @@ section {
 
     img {
       width: 100%;
+    }
+  }
+}
+// ------------------------FAQ------------------------
+#faq {
+  .accordion-button {
+    color: #237927;
+    background-color: rgb(38, 41, 38);
+    border: 1px solid gray;
+  }
+
+  .accordion-body {
+    background-color: rgb(52, 54, 52);
+    color: silver;
+    border: 1px solid gray;
+  }
+}
+
+// ------------------------help------------------------
+#help {
+  .form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+    width: 350px;
+  }
+
+  .form__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin: 5px 0;
+    color: silver;
+  }
+
+  .btn {
+    margin: 15px auto 0 auto;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    background-color: #075c0b;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: silver;
+  }
+
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.2em;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.2;
+    transform: translateX(-3em) skewX(-45deg);
+  }
+
+  .btn:hover {
+    transition: 1.2s;
+    color: white;
+  }
+
+  .btn:hover::before {
+    animation: blicked 1.3s;
+  }
+
+  @keyframes blicked {
+    from {
+      transform: translateX(-3em) skewX(-45deg);
+    }
+
+    to {
+      transform: translateX(30em) skewX(-45deg);
     }
   }
 }
@@ -198,6 +283,18 @@ section {
 footer {
   height: auto;
   background-color: rgb(41, 38, 38);
+
+  p {
+    margin: 5px 0 5px 15px;
+
+    a {
+      text-decoration: none;
+      color: gray;
+    }
+    a:hover {
+      color: #237927;
+    }
+  }
 
   .conteiner_two {
     display: flex;
@@ -304,7 +401,7 @@ footer {
     }
   }
 
-  #about_us {
+  #courses {
     margin-top: 100px;
   }
 }
