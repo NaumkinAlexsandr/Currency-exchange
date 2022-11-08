@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Tangerine:wght@700&display=swap");
+#aaa {
+  color: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -22,8 +26,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 3px 5px;
   padding: 0;
 }
@@ -44,8 +48,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .navbar .nav_menu_logo .languages .language-active {
   padding: 3px;
@@ -87,8 +91,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   overflow: hidden;
   color: silver;
@@ -103,7 +107,7 @@ body {
   background-color: #fff;
   opacity: 0.2;
   -webkit-transform: translateX(-3em) skewX(-45deg);
-  transform: translateX(-3em) skewX(-45deg);
+          transform: translateX(-3em) skewX(-45deg);
 }
 .navbar .button:hover {
   -webkit-transition: 1.2s;
@@ -112,26 +116,26 @@ body {
 }
 .navbar .button:hover::before {
   -webkit-animation: blick 1.3s;
-  animation: blick 1.3s;
+          animation: blick 1.3s;
 }
 @-webkit-keyframes blick {
   from {
     -webkit-transform: translateX(-3em) skewX(-45deg);
-    transform: translateX(-3em) skewX(-45deg);
+            transform: translateX(-3em) skewX(-45deg);
   }
   to {
     -webkit-transform: translateX(30em) skewX(-45deg);
-    transform: translateX(30em) skewX(-45deg);
+            transform: translateX(30em) skewX(-45deg);
   }
 }
 @keyframes blick {
   from {
     -webkit-transform: translateX(-3em) skewX(-45deg);
-    transform: translateX(-3em) skewX(-45deg);
+            transform: translateX(-3em) skewX(-45deg);
   }
   to {
     -webkit-transform: translateX(30em) skewX(-45deg);
-    transform: translateX(30em) skewX(-45deg);
+            transform: translateX(30em) skewX(-45deg);
   }
 }
 .navbar .nav_menu_computer {
@@ -159,6 +163,103 @@ section h2 {
 
 #courses {
   margin-top: 150px;
+  height: auto;
+}
+#courses #favorite_team,
+#courses #team_list {
+  width: 150px;
+  height: 30px;
+}
+#courses .main {
+  margin: auto;
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: white;
+}
+#courses label {
+  font-size: 20px;
+}
+#courses .searchBox {
+  margin-bottom: 10px;
+}
+#courses .text-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#courses .btn {
+  margin: 15px auto 0 auto;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  background-color: #075c0b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+  color: silver;
+}
+#courses .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.2em;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+  -webkit-transform: translateX(-3em) skewX(-45deg);
+          transform: translateX(-3em) skewX(-45deg);
+}
+#courses .btn:hover {
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+  color: white;
+}
+#courses .btn:hover::before {
+  -webkit-animation: blicked 1.3s;
+          animation: blicked 1.3s;
+}
+@-webkit-keyframes blicked {
+  from {
+    -webkit-transform: translateX(-3em) skewX(-45deg);
+            transform: translateX(-3em) skewX(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(30em) skewX(-45deg);
+            transform: translateX(30em) skewX(-45deg);
+  }
+}
+@keyframes blicked {
+  from {
+    -webkit-transform: translateX(-3em) skewX(-45deg);
+            transform: translateX(-3em) skewX(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(30em) skewX(-45deg);
+            transform: translateX(30em) skewX(-45deg);
+  }
+}
+#courses #finalAmount {
+  display: none;
+  margin: 30px auto;
+}
+#courses #finalAmount h2 {
+  font-size: 30px;
+}
+
+#exchange {
+  height: auto;
 }
 
 #contacts {
@@ -178,16 +279,19 @@ section h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #contacts .col-sm-5 img {
   width: 100%;
 }
 
+#faq {
+  height: auto;
+}
 #faq .accordion-button {
   color: #237927;
   background-color: rgb(38, 41, 38);
@@ -211,8 +315,8 @@ section h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 #help label {
   margin: 5px 0;
@@ -230,8 +334,8 @@ section h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   overflow: hidden;
   color: silver;
@@ -246,7 +350,7 @@ section h2 {
   background-color: #fff;
   opacity: 0.2;
   -webkit-transform: translateX(-3em) skewX(-45deg);
-  transform: translateX(-3em) skewX(-45deg);
+          transform: translateX(-3em) skewX(-45deg);
 }
 #help .btn:hover {
   -webkit-transition: 1.2s;
@@ -255,26 +359,16 @@ section h2 {
 }
 #help .btn:hover::before {
   -webkit-animation: blicked 1.3s;
-  animation: blicked 1.3s;
-}
-@-webkit-keyframes blicked {
-  from {
-    -webkit-transform: translateX(-3em) skewX(-45deg);
-    transform: translateX(-3em) skewX(-45deg);
-  }
-  to {
-    -webkit-transform: translateX(30em) skewX(-45deg);
-    transform: translateX(30em) skewX(-45deg);
-  }
+          animation: blicked 1.3s;
 }
 @keyframes blicked {
   from {
     -webkit-transform: translateX(-3em) skewX(-45deg);
-    transform: translateX(-3em) skewX(-45deg);
+            transform: translateX(-3em) skewX(-45deg);
   }
   to {
     -webkit-transform: translateX(30em) skewX(-45deg);
-    transform: translateX(30em) skewX(-45deg);
+            transform: translateX(30em) skewX(-45deg);
   }
 }
 
@@ -292,14 +386,14 @@ section h2 {
   bottom: 70px;
   right: 15px;
   -webkit-transform: rotateZ(270deg);
-  transform: rotateZ(270deg);
+          transform: rotateZ(270deg);
   opacity: 0.3;
 }
 
 #back-top:hover {
   background-color: rgba(14, 112, 10, 0.6);
   -webkit-box-shadow: 0px 0px 10px #075c0b;
-  box-shadow: 0px 0px 10px #075c0b;
+          box-shadow: 0px 0px 10px #075c0b;
   opacity: 0.8;
 }
 
@@ -329,16 +423,16 @@ footer .conteiner_two {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer #twitter,
 footer #facebook,
@@ -362,68 +456,68 @@ footer .conteiner_two a {
 }
 footer #facebook {
   -webkit-box-shadow: 0px 0px 10px rgb(255, 255, 255);
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+          box-shadow: 0px 0px 10px rgb(255, 255, 255);
   background-size: 100%;
   background-image: url(../img/facebook-black.png);
 }
 footer #facebook:hover {
   -webkit-box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
-  box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+          box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
   background-image: url(../img/facebook.png);
 }
 footer #instagram {
   -webkit-box-shadow: 0px 0px 10px rgb(255, 255, 255);
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+          box-shadow: 0px 0px 10px rgb(255, 255, 255);
   background-size: 100%;
   background-image: url(../img/instagram-black.png);
 }
 footer #instagram:hover {
   -webkit-box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
-  box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+          box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
   background-image: url(../img/instagram.png);
 }
 footer #telegram {
   -webkit-box-shadow: 0px 0px 10px rgb(255, 255, 255);
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+          box-shadow: 0px 0px 10px rgb(255, 255, 255);
   background-size: 100%;
   background-image: url(../img/telegram-black.png);
 }
 footer #telegram:hover {
   -webkit-box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
-  box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+          box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
   background-image: url(../img/telegram.png);
 }
 footer #twitter {
   -webkit-box-shadow: 0px 0px 10px rgb(255, 255, 255);
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+          box-shadow: 0px 0px 10px rgb(255, 255, 255);
   background-size: 100%;
   background-image: url(../img/twitter-black.png);
 }
 footer #twitter:hover {
   -webkit-box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
-  box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+          box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
   background-image: url(../img/twitter.png);
 }
 footer #viber {
   -webkit-box-shadow: 0px 0px 10px rgb(255, 255, 255);
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+          box-shadow: 0px 0px 10px rgb(255, 255, 255);
   background-size: 100%;
   background-image: url(../img/viber-black.png);
 }
 footer #viber:hover {
   -webkit-box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
-  box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+          box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
   background-image: url(../img/viber.png);
 }
 footer #whatsapp {
   -webkit-box-shadow: 0px 0px 10px rgb(255, 255, 255);
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+          box-shadow: 0px 0px 10px rgb(255, 255, 255);
   background-size: 100%;
   background-image: url(../img/whatsapp-black.png);
 }
 footer #whatsapp:hover {
   -webkit-box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
-  box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
+          box-shadow: 0px 0px 2px 4px rgba(33, 243, 14, 0.6);
   background-image: url(../img/whatsapp.png);
 }
 

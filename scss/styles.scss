@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Tangerine:wght@700&display=swap"); // @import "icon-list";
+#aaa {
+  color: #fff;
+}
 
 * {
   padding: 0;
@@ -145,6 +148,93 @@ section {
 // ------------------------courses------------------------
 #courses {
   margin-top: 150px;
+  height: auto;
+
+  #favorite_team,
+  #team_list {
+    width: 150px;
+    height: 30px;
+  }
+  .main {
+    margin: auto;
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: white;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  .searchBox {
+    margin-bottom: 10px;
+  }
+
+  .text-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn {
+    margin: 15px auto 0 auto;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    background-color: #075c0b;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: silver;
+  }
+
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.2em;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.2;
+    transform: translateX(-3em) skewX(-45deg);
+  }
+
+  .btn:hover {
+    transition: 1.2s;
+    color: white;
+  }
+
+  .btn:hover::before {
+    animation: blicked 1.3s;
+  }
+
+  @keyframes blicked {
+    from {
+      transform: translateX(-3em) skewX(-45deg);
+    }
+
+    to {
+      transform: translateX(30em) skewX(-45deg);
+    }
+  }
+
+  #finalAmount {
+    display: none;
+    margin: 30px auto;
+  }
+
+  #finalAmount h2 {
+    font-size: 30px;
+  }
+}
+
+// ------------------------exchange------------------------
+#exchange {
+  height: auto;
 }
 
 // ------------------------contakts------------------------
@@ -170,8 +260,11 @@ section {
     }
   }
 }
+
 // ------------------------FAQ------------------------
 #faq {
+  height: auto;
+
   .accordion-button {
     color: #237927;
     background-color: rgb(38, 41, 38);
