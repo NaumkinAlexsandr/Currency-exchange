@@ -27,7 +27,9 @@ var finalAmount = document.getElementById("finalAmount");
 var resultFrom;
 var resultTo;
 var searchValue;
-var aaa = document.getElementById("aaa");
+var give = document.getElementById("give");
+var geting = document.getElementById("geting");
+var result = document.getElementById("result");
 
 // Event when currency is changed
 fromCurrecy.addEventListener("change", (event) => {
@@ -64,6 +66,10 @@ function displayResults(currency) {
   let toRate = currency.rates[resultTo];
   finalValue.innerHTML = ((toRate / fromRate) * searchValue).toFixed(2);
   finalAmount.style.display = "block";
+
+  give.value = fromCurrecy.value;
+  geting.value = toCurrecy.value;
+  result.value = finalValue.value;
 }
 
 // when user click on reset button
@@ -71,5 +77,3 @@ function clearVal() {
   window.location.reload();
   document.getElementsByClassName("finalValue").innerHTML = "";
 }
-
-aaa.innerHTML = dsd;

@@ -172,7 +172,7 @@ section h2 {
 }
 #courses .main {
   margin: auto;
-  padding: 30px;
+  padding: 15px;
   border: 1px solid gray;
   border-radius: 5px;
   color: white;
@@ -181,18 +181,21 @@ section h2 {
   font-size: 20px;
 }
 #courses .searchBox {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 #courses .text-center {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-#courses .btn {
-  margin: 15px auto 0 auto;
+#courses .text-center .btn {
+  margin-right: 5px;
   padding: 5px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -209,7 +212,10 @@ section h2 {
   overflow: hidden;
   color: silver;
 }
-#courses .btn::before {
+#courses .text-center .btn:last-child {
+  margin-right: 0;
+}
+#courses .text-center .btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -221,12 +227,12 @@ section h2 {
   -webkit-transform: translateX(-3em) skewX(-45deg);
           transform: translateX(-3em) skewX(-45deg);
 }
-#courses .btn:hover {
+#courses .text-center .btn:hover {
   -webkit-transition: 1.2s;
   transition: 1.2s;
   color: white;
 }
-#courses .btn:hover::before {
+#courses .text-center :hover::before {
   -webkit-animation: blicked 1.3s;
           animation: blicked 1.3s;
 }
@@ -252,14 +258,109 @@ section h2 {
 }
 #courses #finalAmount {
   display: none;
-  margin: 30px auto;
+  margin: 10px auto;
 }
 #courses #finalAmount h2 {
   font-size: 30px;
 }
+#courses .sending a {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#courses .finalValue {
+  color: green;
+}
 
 #exchange {
   height: auto;
+  margin: 0 12px;
+}
+#exchange #send_form {
+  padding: 12px;
+}
+#exchange .change {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+#exchange .change :first-child {
+  width: 100%;
+  margin-right: 10px;
+}
+#exchange .change :last-child {
+  width: 100%;
+  margin-right: 0px;
+}
+#exchange .form {
+  height: auto;
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: white;
+}
+#exchange .form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#exchange label {
+  margin: 0;
+  color: silver;
+}
+#exchange .form__input {
+  height: 40px;
+  border-radius: 10px;
+}
+#exchange .btn {
+  margin: 10px auto 0 auto;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  background-color: #075c0b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+  color: silver;
+}
+#exchange .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.2em;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+  -webkit-transform: translateX(-3em) skewX(-45deg);
+          transform: translateX(-3em) skewX(-45deg);
+}
+#exchange .btn:hover {
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+  color: white;
+}
+#exchange #give,
+#exchange #geting,
+#exchange #result {
+  padding-left: 10px;
 }
 
 #contacts {
@@ -532,5 +633,12 @@ footer #whatsapp:hover {
   }
   #courses {
     margin-top: 100px;
+  }
+}
+@media (min-width: 576px) {
+  .col-sm-6 {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
   }
 }

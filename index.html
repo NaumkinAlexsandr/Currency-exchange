@@ -63,7 +63,7 @@
           <div class="container">
             <div class="main">
               <div class="form-group">
-                <label for="oamount"> Сколько: </label>
+                <label for="oamount"> Сумма: </label>
                 <input
                   type="text"
                   class="form-control searchBox"
@@ -197,26 +197,20 @@
                   </div>
                 </div>
               </div>
-              <div class="text-center">
-                <!-- convert button -->
-                <button class="btn btn-primary convert m-2" type="submit">
-                  Обменять
-                </button>
-                <!-- reset button -->
-                <button class="btn btn-primary m-2" onclick="clearVal()">
-                  Сбросить
-                </button>
-                <button class="btn btn-primary convert m-2" type="submit">
-                  Заявка
-                  <a href="#courses" class="button col"></a>
-                </button>
-              </div>
               <div id="finalAmount" class="text-center">
                 <!-- Display the converted amount -->
                 <h2>
                   Converted Amount :
-                  <span class="finalValue" style="color: green"> </span>
+                  <output type="text" class="finalValue"></output>
                 </h2>
+              </div>
+              <div class="text-center">
+                <button class="btn convert" type="submit">Обменять</button>
+                <button class="btn" onclick="clearVal()">Сбросить</button>
+                <button class="btn sending" type="submit">
+                  Заявка
+                  <a href="#send_form" class="button col"></a>
+                </button>
               </div>
             </div>
           </div>
@@ -226,7 +220,53 @@
     <!----------------------------------  ---------------------------------->
     <section id="exchange">
       <div class="container-fluid">
-        <div class="row"></div>
+        <div class="row">
+          <h2>Обмен</h2>
+          <form id="send_form" class="form" method="post" action="/send.php">
+            <div class="col-sm-12 change">
+              <div class="form__item col-sm-6">
+                <label class="form__label">Отдам </label>
+                <input
+                  id="give"
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form__item col-sm-6">
+                <label class="form__label">Получу</label>
+                <input
+                  id="geting"
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Сумма</label>
+              <input
+                id="result"
+                class="form__input"
+                type="text"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form__item">
+              <label class="form__label">Ваше имя</label>
+              <input class="form__input" type="text" name="name" required />
+            </div>
+            <div class="form__item">
+              <label class="form__label">Номер телефона</label>
+              <input class="form__input" type="text" name="phone" required />
+            </div>
+            <input class="form__input btn" type="submit" value="Отправить" />
+            <input type="hidden" name="act" value="order" />
+          </form>
+        </div>
       </div>
     </section>
     <!----------------------------------  ---------------------------------->
@@ -336,7 +376,7 @@
     <section id="help">
       <div class="container-fluid">
         <div class="row">
-          <h2>Помощь</h2>
+          <h2>Онлайн консультант</h2>
           <form class="form" method="post" action="/send.php">
             <div class="form__item">
               <label class="form__label">Ваше имя</label>
