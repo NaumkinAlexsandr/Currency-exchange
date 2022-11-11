@@ -222,7 +222,12 @@
       <div class="container-fluid">
         <div class="row">
           <h2>Обмен</h2>
-          <form id="send_form" class="form" method="post" action="/send.php">
+          <form
+            id="send_form"
+            class="form"
+            method="post"
+            action="./php/send.php"
+          >
             <div class="col-sm-12 change">
               <div class="form__item col-sm-6">
                 <label class="form__label">Отдам </label>
@@ -257,11 +262,23 @@
             </div>
             <div class="form__item">
               <label class="form__label">Ваше имя</label>
-              <input class="form__input" type="text" name="name" required />
+              <input
+                id="input"
+                class="form__input"
+                type="text"
+                name="name"
+                required
+              />
             </div>
             <div class="form__item">
               <label class="form__label">Номер телефона</label>
-              <input class="form__input" type="text" name="phone" required />
+              <input
+                id="input"
+                class="form__input"
+                type="text"
+                name="phone"
+                required
+              />
             </div>
             <input class="form__input btn" type="submit" value="Отправить" />
             <input type="hidden" name="act" value="order" />
@@ -295,6 +312,8 @@
                   aria-controls="flush-collapseOne"
                 >
                   Accordion Item #1
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
                 </button>
               </h2>
               <div
@@ -321,8 +340,11 @@
                   aria-controls="flush-collapseTwo"
                 >
                   Accordion Item #2
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
                 </button>
               </h2>
+
               <div
                 id="flush-collapseTwo"
                 class="accordion-collapse collapse"
@@ -348,6 +370,8 @@
                   aria-controls="flush-collapseThree"
                 >
                   Accordion Item #3
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
                 </button>
               </h2>
               <div
@@ -380,11 +404,23 @@
           <form class="form" method="post" action="/send.php">
             <div class="form__item">
               <label class="form__label">Ваше имя</label>
-              <input class="form__input" type="text" name="name" required />
+              <input
+                id="input"
+                class="form__input"
+                type="text"
+                name="name"
+                required
+              />
             </div>
             <div class="form__item">
               <label class="form__label">Номер телефона</label>
-              <input class="form__input" type="text" name="phone" required />
+              <input
+                id="input"
+                class="form__input"
+                type="text"
+                name="phone"
+                required
+              />
             </div>
             <input class="form__input btn" type="submit" value="Отправить" />
             <input type="hidden" name="act" value="order" />

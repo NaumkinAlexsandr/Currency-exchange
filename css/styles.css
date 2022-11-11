@@ -83,6 +83,8 @@ body {
   margin: 0 3px;
   padding: 5px 20px;
   border-radius: 5px;
+  border: 2px solid rgb(161, 161, 161);
+  border-style: outset;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2em;
@@ -176,6 +178,14 @@ section h2 {
   border: 1px solid gray;
   border-radius: 5px;
   color: white;
+}
+#courses .main input {
+  border: none;
+}
+#courses .main input:focus {
+  border: 1px solid;
+  -webkit-box-shadow: 0px 0px 3px 3px #09800f;
+          box-shadow: 0px 0px 3px 3px #09800f;
 }
 #courses label {
   font-size: 20px;
@@ -272,6 +282,11 @@ section h2 {
 #courses .finalValue {
   color: green;
 }
+#courses #sel1:focus,
+#courses #sel2:focus {
+  -webkit-box-shadow: 0px 0px 3px 3px #09800f;
+          box-shadow: 0px 0px 3px 3px #09800f;
+}
 
 #exchange {
   height: auto;
@@ -318,13 +333,20 @@ section h2 {
   margin: 0;
   color: silver;
 }
-#exchange .form__input {
+#exchange input {
   height: 40px;
   border-radius: 10px;
+  border-style: inset;
+}
+#exchange input:focus {
+  border-style: inset;
+  -webkit-box-shadow: 0px 0px 3px 3px #09800f;
+          box-shadow: 0px 0px 3px 3px #09800f;
 }
 #exchange .btn {
   margin: 10px auto 0 auto;
   padding: 5px 20px;
+  border-style: none;
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
@@ -357,9 +379,15 @@ section h2 {
   transition: 1.2s;
   color: white;
 }
+#exchange .btn:focus {
+  border-style: none;
+  -webkit-box-shadow: 0px 0px 3px 3px #09800f;
+          box-shadow: 0px 0px 3px 3px #09800f;
+}
 #exchange #give,
 #exchange #geting,
-#exchange #result {
+#exchange #result,
+#exchange #input {
   padding-left: 10px;
 }
 
@@ -403,6 +431,47 @@ section h2 {
   color: silver;
   border: 1px solid gray;
 }
+#faq .accordion-button:focus {
+  -webkit-box-shadow: 0px 0px 1px 1px #09800f;
+          box-shadow: 0px 0px 1px 1px #09800f;
+}
+#faq .accordion-item {
+  position: relative;
+}
+#faq .accordion-item .arrow_hidden,
+#faq .accordion-item .arrow_show {
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgba(14, 112, 10, 0.6);
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  z-index: 10;
+}
+#faq .accordion-item .accordion-button.collapsed .arrow_hidden {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#faq .accordion-item .accordion-button.collapsed .arrow_show {
+  -webkit-transform: rotateZ(270deg);
+          transform: rotateZ(270deg);
+  display: none;
+}
+#faq .accordion-item .accordion-button .arrow_hidden {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  display: none;
+}
+#faq .accordion-item .accordion-button .arrow_show {
+  -webkit-transform: rotateZ(270deg);
+          transform: rotateZ(270deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 #help .form {
   margin: 20px;
@@ -419,6 +488,19 @@ section h2 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+#help #input {
+  padding-left: 10px;
+}
+#help input {
+  height: 40px;
+  border-radius: 10px;
+  border-style: inset;
+}
+#help input:focus {
+  border-style: inset;
+  -webkit-box-shadow: 0px 0px 3px 3px #09800f;
+          box-shadow: 0px 0px 3px 3px #09800f;
+}
 #help label {
   margin: 5px 0;
   color: silver;
@@ -426,6 +508,7 @@ section h2 {
 #help .btn {
   margin: 15px auto 0 auto;
   padding: 5px 20px;
+  border-style: none;
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
@@ -458,19 +541,10 @@ section h2 {
   transition: 1.2s;
   color: white;
 }
-#help .btn:hover::before {
-  -webkit-animation: blicked 1.3s;
-          animation: blicked 1.3s;
-}
-@keyframes blicked {
-  from {
-    -webkit-transform: translateX(-3em) skewX(-45deg);
-            transform: translateX(-3em) skewX(-45deg);
-  }
-  to {
-    -webkit-transform: translateX(30em) skewX(-45deg);
-            transform: translateX(30em) skewX(-45deg);
-  }
+#help .btn:focus {
+  border-style: none;
+  -webkit-box-shadow: 0px 0px 3px 3px #09800f;
+          box-shadow: 0px 0px 3px 3px #09800f;
 }
 
 #back-top {
