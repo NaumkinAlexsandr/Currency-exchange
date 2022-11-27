@@ -9,7 +9,6 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="css/styles.css" />
     <title>Bootstrap Sass &amp; JS</title>
   </head>
@@ -18,17 +17,11 @@
       <nav class="navbar fixed-top bg-dark">
         <div class="nav_menu_logo container-fluid">
           <div class="row container-fluid">
-            <div class="logo col"><h1>Currency exchange</h1></div>
+            <div class="logo col"><h1>FASTEX MONEY</h1></div>
             <div class="languages col">
-              <form action="#">
-                <button class="language btn">EN</button>
-              </form>
-              <form action="#">
-                <button class="language btn">GE</button>
-              </form>
-              <form action="#">
-                <button class="language-active btn">RU</button>
-              </form>
+              <button class="language btn">EN <a href="#"></a></button>
+              <button class="language btn">GE <a href="#"></a></button>
+              <button class="language active btn">RU <a href="#"></a></button>
             </div>
           </div>
         </div>
@@ -56,6 +49,7 @@
         </div>
       </nav>
     </div>
+
     <section id="courses">
       <div class="container-fluid">
         <div class="row">
@@ -217,7 +211,7 @@
         </div>
       </div>
     </section>
-    <!----------------------------------  ---------------------------------->
+
     <section id="exchange">
       <div class="container-fluid">
         <div class="row">
@@ -286,16 +280,41 @@
         </div>
       </div>
     </section>
-    <!----------------------------------  ---------------------------------->
+
     <section id="transfer">
       <div class="container-fluid">
         <div class="row">
           <h2>Переводы</h2>
-          <div id="aaa"></div>
+          <div class="col-sm-6">
+            <h3>ОНЛАЙН</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit
+              modi voluptatem perspiciatis libero ducimus vitae explicabo aut
+              sint. Saepe inventore odit eos dolore quis esse quidem accusantium
+              repudiandae. Maiores! Quia consequatur itaque dolorum facere,
+              eius, dolore laborum quam tempore laudantium atque quod, enim
+              suscipit est amet incidunt rem. Eius autem nam enim culpa
+              reiciendis excepturi tempore ipsa asperiores necessitatibus?
+              Laborum, et? Ut quia eos, odio dolorum omnis iusto?
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <h3>ОФФЛАЙН</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit
+              modi voluptatem perspiciatis libero ducimus vitae explicabo aut
+              sint. Saepe inventore odit eos dolore quis esse quidem accusantium
+              repudiandae. Maiores! Quia consequatur itaque dolorum facere,
+              eius, dolore laborum quam tempore laudantium atque quod, enim
+              suscipit est amet incidunt rem. Eius autem nam enim culpa
+              reiciendis excepturi tempore ipsa asperiores necessitatibus?
+              Laborum, et? Ut quia eos, odio dolorum omnis iusto?
+            </p>
+          </div>
         </div>
       </div>
     </section>
-    <!----------------------------------  ---------------------------------->
+
     <section id="faq">
       <div class="container-fluid">
         <div class="row">
@@ -344,7 +363,6 @@
                   <img class="arrow_show" src="./img/arrow.png" />
                 </button>
               </h2>
-
               <div
                 id="flush-collapseTwo"
                 class="accordion-collapse collapse"
@@ -391,53 +409,306 @@
                 </div>
               </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  Accordion Item #4
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  Accordion Item #5
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingFive"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSix"
+                >
+                  Accordion Item #6
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSix"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingSix"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSeven">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSeven"
+                >
+                  Accordion Item #7
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSeven"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingSeven"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEight">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseEight"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseEight"
+                >
+                  Accordion Item #8
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
+                </button>
+              </h2>
+              <div
+                id="flush-collapseEight"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingEight"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingNine">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseNine"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseNine"
+                >
+                  Accordion Item #9
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
+                </button>
+              </h2>
+              <div
+                id="flush-collapseNine"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingNine"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTen">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTen"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTen"
+                >
+                  Accordion Item #10
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTen"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTen"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEleven">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseEleven"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseEleven"
+                >
+                  Accordion Item #11
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
+                </button>
+              </h2>
+              <div
+                id="flush-collapseEleven"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingEleven"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwelve">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwelve"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwelve"
+                >
+                  Accordion Item #12
+                  <img class="arrow_hidden" src="./img/arrow.png" />
+                  <img class="arrow_show" src="./img/arrow.png" />
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwelve"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwelve"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!----------------------------------  ---------------------------------->
 
-    <section id="help">
-      <div class="container-fluid">
-        <div class="row">
-          <h2>Онлайн консультант</h2>
-          <form class="form" method="post" action="/send.php">
-            <div class="form__item">
-              <label class="form__label">Ваше имя</label>
-              <input
-                id="input"
-                class="form__input"
-                type="text"
-                name="name"
-                required
-              />
-            </div>
-            <div class="form__item">
-              <label class="form__label">Номер телефона</label>
-              <input
-                id="input"
-                class="form__input"
-                type="text"
-                name="phone"
-                required
-              />
-            </div>
-            <input class="form__input btn" type="submit" value="Отправить" />
-            <input type="hidden" name="act" value="order" />
-          </form>
-        </div>
-      </div>
-    </section>
-    <!----------------------------------  ---------------------------------->
+    <section id="help"></section>
 
     <section id="contacts">
       <div class="container-fluid">
         <div class="row">
-          <h2>Контакты</h2>
-          <div class="col-sm-5">
-            <img src="./img/ekspress.png" alt="time" />
-          </div>
-          <div class="col-sm-7">
+          <div class="col-sm-6">
+            <h2>Контакты</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit
               modi voluptatem perspiciatis libero ducimus vitae explicabo aut
@@ -449,27 +720,69 @@
               Laborum, et? Ut quia eos, odio dolorum omnis iusto? Cum optio
               placeat nihil nemo, quis minima eaque enim repellendus, aperiam
               atque quos eum nulla consequatur non voluptatibus vitae sit quia.
-              Perferendis dicta nulla dolorem nostrum inventore totam
-              exercitationem voluptatem excepturi eligendi asperiores fuga
-              minima quo quia optio corrupti cupiditate quaerat eius et,
-              quibusdam vero nisi atque sit eum ipsa. Aut? Voluptates unde
-              nobis, perspiciatis illum libero architecto nemo doloribus sequi
-              quae! Delectus dolore soluta deleniti ut labore illo doloribus
-              consectetur esse sequi omnis? Modi odit reiciendis minima
-              distinctio ullam consequuntur?
             </p>
+          </div>
+          <div class="col-sm-6">
+            <div id="consultant" class="container-fluid">
+              <div class="row">
+                <h2>Онлайн консультант</h2>
+                <form class="form" method="post" action="/php/send.php">
+                  <div class="form__item">
+                    <label class="form__label">Ваше имя</label>
+                    <input
+                      id="input"
+                      class="form__input"
+                      type="text"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="form__item field">
+                    <label for="phone" class="form__label"
+                      >Номер телефона</label
+                    >
+                    <input
+                      id="input "
+                      class="form__input"
+                      type="text"
+                      name="phone"
+                      placeholder="9990000000"
+                      required
+                    />
+                  </div>
+                  <input
+                    class="form__input btn"
+                    type="submit"
+                    value="Отправить"
+                  />
+
+                  <input type="hidden" name="act" value="order" />
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <div id="back-top"><a href="#"></a></div>
     <footer>
-      <p>
-        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-      </p>
-      <p>
-        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-      </p>
+      <div>
+        <a href="#">Дисклеймер</a>
+        <span>|</span>
+        <a href="#">Cookie</a>
+        <span>|</span>
+        <a href="#">Конфиденциальность</a>
+      </div>
+      <div>
+        <a href="#">Новости и блог</a>
+        <span>|</span>
+        <a href="#">P2P обмен</a>
+        <span>|</span>
+        <a href="#">Оффлайн обмен</a>
+      </div>
+      <div>
+        <a href="#">Crypto Financial Service © 2022 г.</a>
+      </div>
       <div class="conteiner_two">
         <div id="twitter">
           <a class="twitter" href=""></a>
@@ -502,6 +815,8 @@
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
+    <script src="counties.js"></script>
+    <script src="phonecode.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>

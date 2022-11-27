@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Tangerine:wght@700&display=swap"); // @import "icon-list";
-#aaa {
-  color: #fff;
-}
 
 * {
   padding: 0;
@@ -24,6 +21,7 @@ body {
     .row {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin: 3px 5px;
       padding: 0;
     }
@@ -33,7 +31,7 @@ body {
       h1 {
         padding: 0;
         margin: 0;
-        font-size: 1.6em;
+        font-size: 1em;
         letter-spacing: 0.1em;
         font-family: "Tangerine", cursive;
         color: #075c0b;
@@ -45,20 +43,64 @@ body {
       display: flex;
       justify-content: end;
 
-      .language-active {
-        padding: 3px;
-        margin: 0 3px;
-        width: 40px;
-        background-color: #075c0b;
-        color: silver;
-      }
-
       .language {
         padding: 3px;
         margin: 0 3px;
         width: 40px;
         background-color: gray;
-        color: black;
+        color: silver;
+        position: relative;
+        border: 2px solid rgb(161, 161, 161);
+        border-style: outset;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .active {
+        background-color: #075c0b;
+        color: silver;
+      }
+
+      .language::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.2em;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.2;
+        transform: translateX(-3em) skewX(-45deg);
+      }
+
+      .language:hover {
+        transition: 1.2s;
+        color: white;
+      }
+
+      .language:hover::before {
+        animation: blickLanguages 0.5s;
+      }
+
+      @keyframes blickLanguages {
+        from {
+          transform: translateX(-3em) skewX(-45deg);
+        }
+
+        to {
+          transform: translateX(5em) skewX(-45deg);
+        }
+      }
+
+      a {
+        width: 40px;
+        height: 35px;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
     }
   }
@@ -138,7 +180,7 @@ body {
 
 // ------------------------section all------------------------
 section {
-  height: 400px;
+  height: auto;
   margin-bottom: 10px;
 
   h2 {
@@ -151,7 +193,6 @@ section {
 // ------------------------courses------------------------
 #courses {
   margin-top: 150px;
-  height: auto;
 
   #favorite_team,
   #team_list {
@@ -191,8 +232,10 @@ section {
     justify-content: space-between;
 
     .btn {
-      margin-right: 5px;
-      padding: 5px 20px;
+      margin: 10px 5px 0 0;
+      padding: 5px 10px;
+      border: 2px solid rgb(161, 161, 161);
+      border-style: outset;
       border-radius: 5px;
       text-decoration: none;
       text-transform: uppercase;
@@ -201,42 +244,16 @@ section {
       display: flex;
       justify-content: center;
       position: relative;
-      overflow: hidden;
       color: silver;
     }
+
     .btn:last-child {
       margin-right: 0;
-    }
-
-    .btn::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 1.2em;
-      height: 100%;
-      background-color: #fff;
-      opacity: 0.2;
-      transform: translateX(-3em) skewX(-45deg);
     }
 
     .btn:hover {
       transition: 1.2s;
       color: white;
-    }
-
-    :hover::before {
-      animation: blicked 1.3s;
-    }
-
-    @keyframes blicked {
-      from {
-        transform: translateX(-3em) skewX(-45deg);
-      }
-
-      to {
-        transform: translateX(30em) skewX(-45deg);
-      }
     }
   }
 
@@ -266,12 +283,15 @@ section {
   #sel2:focus {
     box-shadow: 0px 0px 3px 3px #09800f;
   }
+
+  .input-group-prepend {
+    width: 90px;
+  }
 }
 
 // ------------------------exchange------------------------
 #exchange {
-  height: auto;
-  margin: 0 12px;
+  margin: 0 12px 12px 12px;
 
   #send_form {
     padding: 12px;
@@ -325,7 +345,8 @@ section {
   .btn {
     margin: 10px auto 0 auto;
     padding: 5px 20px;
-    border-style: none;
+    border: 2px solid rgb(161, 161, 161);
+    border-style: outset;
     border-radius: 5px;
     text-decoration: none;
     text-transform: uppercase;
@@ -334,30 +355,12 @@ section {
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: hidden;
     color: silver;
-  }
-
-  .btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1.2em;
-    height: 100%;
-    background-color: #fff;
-    opacity: 0.2;
-    transform: translateX(-3em) skewX(-45deg);
   }
 
   .btn:hover {
     transition: 1.2s;
     color: white;
-  }
-
-  .btn:focus {
-    border-style: none;
-    box-shadow: 0px 0px 3px 3px #09800f;
   }
 
   #give,
@@ -368,34 +371,19 @@ section {
   }
 }
 
-// ------------------------contakts------------------------
-#contacts {
-  width: 100%;
-  height: auto;
+// ------------------------transfer------------------------
+#transfer {
+  h3 {
+    font-size: 1.1rem;
+    color: silver;
+  }
 
   p {
     color: silver;
   }
-
-  .row {
-    display: flex;
-  }
-
-  .col-sm-5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      width: 100%;
-    }
-  }
 }
-
 // ------------------------FAQ------------------------
 #faq {
-  height: auto;
-
   .accordion-button {
     color: #237927;
     background-color: rgb(38, 41, 38);
@@ -450,10 +438,36 @@ section {
 
 // ------------------------help------------------------
 #help {
+  width: 100%;
+}
+
+// ------------------------contakts------------------------
+#contacts {
+  width: 100%;
+
+  p {
+    color: silver;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col-sm-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+#consultant {
   .form {
-    margin: 20px;
-    padding: 20px;
     border: 1px solid gray;
+    border-radius: 5px;
     width: 350px;
   }
 
@@ -472,20 +486,16 @@ section {
     border-style: inset;
   }
 
-  input:focus {
-    border-style: inset;
-    box-shadow: 0px 0px 3px 3px #09800f;
-  }
-
   label {
     margin: 5px 0;
     color: silver;
   }
 
   .btn {
-    margin: 15px auto 0 auto;
+    margin: 10px auto 10px auto;
     padding: 5px 20px;
-    border-style: none;
+    border: 2px solid rgb(161, 161, 161);
+    border-style: outset;
     border-radius: 5px;
     text-decoration: none;
     text-transform: uppercase;
@@ -494,30 +504,12 @@ section {
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: hidden;
     color: silver;
-  }
-
-  .btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1.2em;
-    height: 100%;
-    background-color: #fff;
-    opacity: 0.2;
-    transform: translateX(-3em) skewX(-45deg);
   }
 
   .btn:hover {
     transition: 1.2s;
     color: white;
-  }
-
-  .btn:focus {
-    border-style: none;
-    box-shadow: 0px 0px 3px 3px #09800f;
   }
 }
 
@@ -551,10 +543,9 @@ section {
 
 // ------------------------footer------------------------
 footer {
-  height: auto;
   background-color: rgb(41, 38, 38);
 
-  p {
+  div {
     margin: 5px 0 5px 15px;
 
     a {
@@ -563,6 +554,11 @@ footer {
     }
     a:hover {
       color: #237927;
+    }
+
+    span {
+      padding: 0 2px;
+      color: gray;
     }
   }
 
@@ -681,3 +677,5 @@ footer {
     flex: auto;
   }
 }
+
+@import "./flag.scss";
