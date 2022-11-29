@@ -42,7 +42,7 @@ var countryRequesting = false;
     _loadData: function () {
       var self = this;
       if (!countryCache && !countryRequesting) {
-        countryRequesting = $.getJSON("countries.json", {})
+        countryRequesting = $.getJSON("./js/countries.json", {})
           .done(function (json) {
             self.data = json;
             countryCache = self.data;
@@ -143,7 +143,7 @@ var countryRequesting = false;
             '"' +
             ' class="country-phone-option"><span>+' +
             country.ph +
-            '<img src="blank.gif" class="flag flag-' +
+            '<img src="./img/blank.gif" class="flag flag-' +
             country.co +
             '"></span>' +
             country.na +
@@ -164,7 +164,7 @@ var countryRequesting = false;
         this.container
           .find(".country-phone-selected")
           .html(
-            '<img src="blank.gif" class="flag flag-' +
+            '<img src="./img/blank.gif" class="flag flag-' +
               selected.co +
               '">+' +
               selected.ph

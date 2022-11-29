@@ -332,6 +332,7 @@ section {
   }
 
   input {
+    width: auto;
     height: 40px;
     border-radius: 10px;
     border-style: inset;
@@ -342,6 +343,15 @@ section {
     box-shadow: 0px 0px 3px 3px #09800f;
   }
 
+  .country-phone {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    .phone {
+      min-width: 160px;
+      width: 100%;
+    }
+  }
   .btn {
     margin: 10px auto 0 auto;
     padding: 5px 20px;
@@ -491,6 +501,17 @@ section {
     color: silver;
   }
 
+  .country-phone {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    .phoneTwo {
+      min-width: 110px;
+      width: 100%;
+    }
+  }
+
   .btn {
     margin: 10px auto 10px auto;
     padding: 5px 20px;
@@ -527,6 +548,7 @@ section {
   right: 15px;
   transform: rotateZ(270deg);
   opacity: 0.3;
+  z-index: 20;
 }
 
 #back-top:hover {
@@ -677,5 +699,3 @@ footer {
     flex: auto;
   }
 }
-
-@import "./flag.scss";

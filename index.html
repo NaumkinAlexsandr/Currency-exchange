@@ -9,7 +9,8 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/flag.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Bootstrap Sass &amp; JS</title>
   </head>
   <body>
@@ -268,7 +269,7 @@
               <label class="form__label">Номер телефона</label>
               <input
                 id="input"
-                class="form__input"
+                class="form__input phone"
                 type="text"
                 name="phone"
                 required
@@ -738,14 +739,14 @@
                     />
                   </div>
                   <div class="form__item field">
-                    <label for="phone" class="form__label"
+                    <label for="phoneTwo" class="form__label"
                       >Номер телефона</label
                     >
                     <input
-                      id="input "
-                      class="form__input"
+                      id="input"
+                      class="form__input phoneTwo"
                       type="text"
-                      name="phone"
+                      name="phoneTwo"
                       placeholder="9990000000"
                       required
                     />
@@ -755,7 +756,6 @@
                     type="submit"
                     value="Отправить"
                   />
-
                   <input type="hidden" name="act" value="order" />
                 </form>
               </div>
@@ -804,7 +804,7 @@
         </div>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -815,8 +815,11 @@
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
-    <script src="counties.js"></script>
-    <script src="phonecode.js"></script>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/phonecode.js"></script>
+    <script src="./js/counties.js"></script>
+    <script src="./js/phone.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>
