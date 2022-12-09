@@ -36,10 +36,10 @@ body {
 .navbar .nav_menu_logo .logo h1 {
   padding: 0;
   margin: 0;
-  font-size: 1em;
+  font-size: 1.1em;
   letter-spacing: 0.1em;
   font-family: "Tangerine", cursive;
-  color: #075c0b;
+  color: #0d7212;
 }
 .navbar .nav_menu_logo .languages {
   padding: 0px;
@@ -222,7 +222,8 @@ section h2 {
 }
 
 #courses {
-  margin-top: 150px;
+  margin-top: 160px;
+  max-width: 600px;
 }
 #courses #favorite_team,
 #courses #team_list {
@@ -257,12 +258,12 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #courses .text-center .btn {
-  margin: 10px 5px 0 0;
+  margin: 10px 10px 0 0;
   padding: 5px 10px;
   border: 2px solid rgb(161, 161, 161);
   border-style: outset;
@@ -315,6 +316,7 @@ section h2 {
 
 #exchange {
   margin: 0 12px 12px 12px;
+  max-width: 580px;
 }
 #exchange #send_form {
   padding: 12px;
@@ -407,11 +409,13 @@ section h2 {
 #exchange #give,
 #exchange #geting,
 #exchange #result,
-#exchange #input {
+#exchange #input,
+#exchange #input_telegram {
   padding-left: 10px;
 }
 
 #transfer h3 {
+  text-align: center;
   font-size: 1.1rem;
   color: silver;
 }
