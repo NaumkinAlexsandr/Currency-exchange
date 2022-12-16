@@ -60,7 +60,7 @@
               <div class="form-group">
                 <label for="oamount"> Сумма: </label>
                 <input
-                  type="text"
+                  type="number"
                   class="form-control searchBox"
                   placeholder="0.00"
                   id="oamount"
@@ -250,7 +250,7 @@
               <input
                 id="result"
                 class="form__input"
-                type="text"
+                type="number"
                 name="name"
                 required
               />
@@ -281,7 +281,7 @@
               <input
                 id="input"
                 class="form__input phone"
-                type="text"
+                type="number"
                 name="phone"
                 required
                 placeholder="123 456 78 99"
@@ -300,16 +300,36 @@
           <h2>Переводы</h2>
           <div class="col-sm-6">
             <h3>ОНЛАЙН</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit
-              modi voluptatem perspiciatis libero ducimus vitae explicabo aut
-              sint. Saepe inventore odit eos dolore quis esse quidem accusantium
-              repudiandae. Maiores! Quia consequatur itaque dolorum facere,
-              eius, dolore laborum quam tempore laudantium atque quod, enim
-              suscipit est amet incidunt rem. Eius autem nam enim culpa
-              reiciendis excepturi tempore ipsa asperiores necessitatibus?
-              Laborum, et? Ut quia eos, odio dolorum omnis iusto?
-            </p>
+            <form class="form" method="post" action="/php/send.php">
+              <div class="form__item">
+                <label for="sendMoney" class="form__label"
+                  >Вы отправляете</label
+                >
+                <input
+                  id="input"
+                  class="form__input sendMoney"
+                  type="number"
+                  name="sendMoney"
+                  placeholder="Введите сумму"
+                  required
+                />
+              </div>
+              <div class="form__item field">
+                <label for="getMoney" class="form__label"
+                  >Получатель получит</label
+                >
+                <input
+                  id="input"
+                  class="form__input getMoney"
+                  type="number"
+                  name="getMoney"
+                  placeholder="Введите сумму"
+                  required
+                />
+              </div>
+              <input class="form__input btn" type="submit" value="Перевести" />
+              <input type="hidden" name="act" value="order" />
+            </form>
           </div>
           <div class="col-sm-6">
             <h3>ОФФЛАЙН</h3>
@@ -757,7 +777,7 @@
                     <input
                       id="input"
                       class="form__input phoneTwo"
-                      type="text"
+                      type="number"
                       name="phoneTwo"
                       placeholder="123 456 78 99"
                       required
@@ -829,6 +849,7 @@
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/phonecode.js"></script>
+    <script src="./js/countriescode.js"></script>
     <script src="./js/counties.js"></script>
     <script src="./js/phone.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>

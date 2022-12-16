@@ -2,7 +2,7 @@ var countryCache;
 var countryRequesting = false;
 
 (function ($) {
-  $.widget("custom.phonecode", {
+  $.widget("custom.countriescode", {
     data: [],
     container: null,
     prefixField: null,
@@ -71,11 +71,12 @@ var countryRequesting = false;
       var selector = this.container.find(".country-phone-selected");
       var selected = null;
       var self = this;
+      var searchLabel = $('<label class="country-phone-search-label"></label>');
       var searchInput = $(
         '<input placeholder="Введите страну" type="text" class="country-phone-search" value="">'
       );
       $(searchInput).appendTo(options);
-      var searchLabel = $('<label class="country-phone-search-label"></label>');
+
       $(searchLabel)
         .on("click", function () {
           $(this).hide();
@@ -135,12 +136,12 @@ var countryRequesting = false;
 
         var option = $(
           '<div data-phone="' +
-            country.ph +
+            country.money +
             '" data-co="' +
             prefCountry.toLowerCase() +
             '"' +
-            ' class="country-phone-option"><span>+' +
-            country.ph +
+            ' class="country-phone-option"><span>' +
+            country.money +
             '<img src="./img/blank.gif" class="flag flag-' +
             country.co +
             '"></span>' +
@@ -153,7 +154,7 @@ var countryRequesting = false;
             selected = country;
           }
         } else {
-          if (country.ph == this.options.default_prefix) {
+          if (country.money == this.options.default_prefix) {
             selected = country;
           }
         }
@@ -164,8 +165,8 @@ var countryRequesting = false;
           .html(
             '<img src="./img/blank.gif" class="flag flag-' +
               selected.co +
-              '">+' +
-              selected.ph
+              '">' +
+              selected.money
           );
       }
       $(selector).bind("click", function (e) {

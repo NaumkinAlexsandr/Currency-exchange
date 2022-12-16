@@ -1,11 +1,23 @@
 $(function () {
   $(".phone").phonecode({
-    preferCo: "ru",
+    preferCo: "ge",
   });
 });
 
 $(function () {
   $(".phoneTwo").phonecode({
-    preferCo: "ru",
+    preferCo: "ge",
+  });
+});
+
+$(function () {
+  $(".sendMoney").countriescode({
+    preferCo: "ge",
+  });
+});
+
+$(function () {
+  $(".getMoney").countriescode({
+    preferCo: "ge",
   });
 });

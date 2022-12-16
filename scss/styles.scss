@@ -329,7 +329,7 @@ section {
   }
 
   label {
-    margin: 0;
+    margin: 5px 0 0 0;
     color: silver;
   }
 
@@ -345,15 +345,26 @@ section {
     box-shadow: 0px 0px 3px 3px #09800f;
   }
 
+  .country-phone-options {
+    top: 12px;
+  }
+
   .country-phone {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
+    position: relative;
     .phone {
       min-width: 160px;
       width: 100%;
     }
+
+    input {
+      width: 95%;
+      margin: 0 7px 0 7px;
+    }
   }
+
   .btn {
     margin: 10px auto 0 auto;
     padding: 5px 20px;
@@ -395,7 +406,91 @@ section {
   p {
     color: silver;
   }
+
+  .form {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .form__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #input {
+    padding-left: 10px;
+  }
+
+  .country-phone {
+    position: relative;
+
+    input {
+      width: 95%;
+      margin: 0 7px 0 7px;
+    }
+  }
+
+  .country-phone-selector {
+    position: absolute;
+    top: 4px;
+    right: 0;
+  }
+
+  .country-phone-selected {
+    color: black;
+  }
+
+  .country-phone-options {
+    top: 6px;
+    right: 15px;
+  }
+
+  input {
+    height: 40px;
+    border-radius: 10px;
+    border-style: inset;
+  }
+
+  label {
+    margin: 5px 0 0 15px;
+    color: silver;
+  }
+
+  .country-money {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    .getMoney,
+    .sendMoney {
+      min-width: 110px;
+      width: 100%;
+    }
+  }
+
+  .btn {
+    margin: 10px auto 10px auto;
+    padding: 5px 20px;
+    border: 2px solid rgb(161, 161, 161);
+    border-style: outset;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    background-color: #075c0b;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: silver;
+  }
+
+  .btn:hover {
+    transition: 1.2s;
+    color: white;
+  }
 }
+
 // ------------------------FAQ------------------------
 #faq {
   .accordion-button {
@@ -509,11 +604,16 @@ section {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
+    position: relative;
 
     .phoneTwo {
       min-width: 110px;
       width: 100%;
     }
+  }
+
+  .country-phone-options {
+    top: 12px;
   }
 
   .btn {
